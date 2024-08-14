@@ -1,6 +1,6 @@
-# 🔐 ¡Bienvenidas y bienvenidos a nuestro primer desafío!
+# 🔐 ¡Desafío Encriptador de Texto - Alura Latam!
 
-![Encriptador de Texto](ruta/a/tu/imagen-de-portada.png)
+![Encriptador de Texto](images/portada.png)
 
 ## 📋 Índice
 
