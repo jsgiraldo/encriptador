@@ -1,8 +1,8 @@
 function encriptar() {
     let texto = document.getElementById("texto").value;
-    let tituloMensaje = document.getElementById("titulo-mensaje");
-    let parrafo = document.getElementById("parrafo");
-    let muñeco = document.getElementById("muñeco");
+  //  let tituloMensaje = document.getElementById("titulo-mensaje");
+ //   let parrafo = document.getElementById("parrafo");
+  //  let muñeco = document.getElementById("muñeco");
   
     let textoCifrado = texto
       .replace(/e/gi, "enter")
@@ -11,15 +11,15 @@ function encriptar() {
       .replace(/o/gi, "ober")
       .replace(/u/gi, "ufat");
   
-    if (texto.length != 0) {
+    if (document.getElementById("texto").value.length != 0) {
       document.getElementById("texto").value = textoCifrado;
-      tituloMensaje.textContent = "Texto encriptado con éxito";
-      parrafo.textContent = "";
-      muñeco.src = "./images/encriptado.jpeg";
+      document.getElementById("titulo-mensaje").textContent = "Texto encriptado con éxito";
+      document.getElementById("parrafo").textContent = "";
+      document.getElementById("muñeco").src = "./images/encriptado.jpeg";
     } else {
-      muñeco.src = "./images/encriptadororacle.png";
-      tituloMensaje.textContent = "Ningún mensaje fue encontrado";
-      parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
+      document.getElementById("muñeco").src = "./images/encriptadororacle.png";
+      document.getElementById("titulo-mensaje").textContent = "Ningún mensaje fue encontrado";
+      document.getElementById("parrafo").textContent = "Ingresa el texto que deseas encriptar o desencriptar";
       swal("Ooops!", "Debes ingresar un texto", "warning");
     }
   }
