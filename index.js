@@ -17,7 +17,7 @@ function encriptar() {
       parrafo.textContent = "";
       muñeco.src = "./images/encriptado.jpeg";
     } else {
-      muñeco.src = "./images/encriptador-imagen.jpg";
+      muñeco.src = "./images/encriptadororacle.png";
       tituloMensaje.textContent = "Ningún mensaje fue encontrado";
       parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
       swal("Ooops!", "Debes ingresar un texto", "warning");
